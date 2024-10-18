@@ -1,17 +1,15 @@
 source 'https://rubygems.org'
 
-ruby '3.0.0'
+ruby '3.3.5'
 
 # Rails and database
-gem 'rails', '6.1.1'
+gem 'rails', '7.2.1.1'
 gem 'pg'
 gem 'puma'
 
-# CSS
-# Work with SASS and SCSS
+# SCSS
 gem 'sass-rails'
-# Font Awesome
-gem 'font-awesome-rails'
+
 # Auto prefixer for old browsers
 gem 'autoprefixer-rails'
 
@@ -22,8 +20,6 @@ gem 'sprockets-rails'
 gem 'jquery-rails'
 # jQuery UI
 gem 'jquery-ui-rails'
-# Compiler of JS assets
-gem 'uglifier'
 
 # Template engines
 # For HTML
