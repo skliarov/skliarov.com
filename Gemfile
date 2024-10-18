@@ -18,6 +18,4 @@ gem 'sprockets-rails'
 # HTML template engine
 gem 'slim-rails'
 
-gem 'figaro'
-
 gem 'meta-tags'
