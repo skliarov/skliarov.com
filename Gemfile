@@ -10,12 +10,12 @@ gem 'puma'
 # SCSS
 gem 'sass-rails'
 
-# Auto prefixer for old browsers
-gem 'autoprefixer-rails'
-
 gem 'sprockets-rails'
 
 # HTML template engine
 gem 'slim-rails'
 
 gem 'meta-tags'
+
+# Redirect all hosts to canonical one
+gem 'rack-canonical-host'
