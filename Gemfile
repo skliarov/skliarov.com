@@ -10,11 +10,6 @@ gem 'puma'
 # SCSS
 gem 'sass-rails'
 
-gem 'therubyracer', platforms: :ruby
-
-# Auto prefixer for old browsers
-gem 'autoprefixer-rails'
-
 gem 'sprockets-rails'
 
 # HTML template engine
