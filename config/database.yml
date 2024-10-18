@@ -7,12 +7,12 @@ default: &default
   host: <%= ENV['RDS_HOSTNAME'] %>
   port: <%= ENV['RDS_PORT'] %>
   pool: <%= ENV['RDS_POOL'] || 5 %>
-  
+
 production:
   <<: *default
-  
+
 development:
   <<: *default
-  
+
 test:
   <<: *default

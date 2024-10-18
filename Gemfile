@@ -15,46 +15,9 @@ gem 'autoprefixer-rails'
 
 gem 'sprockets-rails'
 
-# JS
-# jQuery
-gem 'jquery-rails'
-# jQuery UI
-gem 'jquery-ui-rails'
-
-# Template engines
-# For HTML
+# HTML template engine
 gem 'slim-rails'
-
-# Authentication and authorization
-gem 'devise'
 
 gem 'figaro'
 
-# Pagination
-gem 'kaminari'
-
-# Rich text editor
-gem 'ckeditor'
-gem 'carrierwave'
-gem 'mini_magick'
-
-# SEO Optimisation
 gem 'meta-tags'
-
-# Localization
-gem 'rails-i18n'
-
-group :development do
-  gem 'listen'
-end
-
-group :development, :test do
-  gem 'rspec-rails'
-end
-
-group :test do
-  gem 'factory_girl_rails'
-  gem 'faker'
-  gem 'shoulda-matchers'
-  gem 'rspec-expectations'
-end
