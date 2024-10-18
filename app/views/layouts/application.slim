@@ -1,47 +1,25 @@
 doctype html
 html
   head
-    = auto_discovery_link_tag :rss, 'https://www.skliarov.com/feed'
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'application'
-    
+
     = display_meta_tags
     = csrf_meta_tags
-    
+
     = render 'layouts/favicons'
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-  
+
   body
-    /! Navigation bar
-    /nav.desktop
-      .column.top-menu
-        ul.left
-          li class=('active' if params[:controller] == 'pages' && params[:action] == 'about')
-            = link_to 'Про мене', '/'
-          li class=('active' if params[:controller] == 'articles')
-            = link_to 'Статті', articles_path
-        ul.right
-          li
-            = link_to '', feed_path, { class: 'fa fa-rss' }
-          - if user_signed_in?
-            li
-              = link_to 'Sign Out', destroy_user_session_path, method: :delete
-              
-    /nav.mobile
-      .logo
-        = link_to 'Максим Скляров', articles_path
-      .breadcrumb
-        = link_to '', '#', { class: 'fa fa-bars' }
-        
     /! Notification on latest action
     - if notice
       .column.column-800
         p
           = notice
-          
+
     /! Page content
     = yield
-    
+
     /! Google Analytics
     - if Rails.env.production?
       javascript:
@@ -49,6 +27,6 @@ html
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        
+
         ga('create', 'UA-76313628-1', 'auto');
         ga('send', 'pageview');
