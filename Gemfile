@@ -16,3 +16,6 @@ gem 'sprockets-rails'
 gem 'slim-rails'
 
 gem 'meta-tags'
+
+# Redirect all hosts to canonical one
+gem 'rack-canonical-host'
