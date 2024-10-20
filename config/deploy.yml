@@ -30,7 +30,7 @@ proxy:
 registry:
   server: 016004245235.dkr.ecr.us-east-1.amazonaws.com
   username: AWS
-  password: <%= %x(aws ecr get-login-password --region us-east-1 --profile ecr-skliarov-com) %>
+  password: <%= %x(aws ecr get-login-password --region us-east-1 --profile ecr.skliarov.com) %>
 
 # Configure builder setup.
 builder:
@@ -75,20 +75,6 @@ ssh:
 # Use accessory services (secrets come from .kamal/secrets).
 #
 # accessories:
-#   db:
-#     image: mysql:8.0
-#     host: 192.168.0.2
-#     port: 3306
-#     env:
-#       clear:
-#         MYSQL_ROOT_HOST: '%'
-#       secret:
-#         - MYSQL_ROOT_PASSWORD
-#     files:
-#       - config/mysql/production.cnf:/etc/mysql/my.cnf
-#       - db/production.sql:/docker-entrypoint-initdb.d/setup.sql
-#     directories:
-#       - data:/var/lib/mysql
 #   redis:
 #     image: redis:7.0
 #     host: 192.168.0.2
